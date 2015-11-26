@@ -1,18 +1,18 @@
 <?php
 
-	$abaris_home = array(
+    $abaris_home = array(
         'slides' => array(
             'slide1' => array(
                 'image' => ABARIS_PARENT_URL .'/images/slide1.png',
-                'description' => __('<h2>Thanks for choosing Abaris</h2><h3>Our Beautiful WordPress Theme</h3><p>Lorem Ipsum It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><a href="http://demo.webulous.in/abaris/contact/" class="btn-more">Contact Us</a>','abaris'),
+                'description' => __('<h2>House of Living Oracles launches</h2><h3>On November 28th, 2015</h3><p><strong>VENUE:</strong> Rising Sun School Hall, Egbe, Lagos.</p><a href="http://demo.webulous.in/abaris/contact/" class="btn-more">Contact Us</a>','abaris'),
             ),
             'slide2' => array(
                 'image' => ABARIS_PARENT_URL .'/images/slide1.png',
-                'description' => __('<h2>Lightning Fast</h2><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est culpa qui laborum.</p><a href="#" class="btn-more">Learn More</a>','abaris'),
+                'description' => __('<h2>House of Living Oracles</h2><p>To raise a New Generation of Young Leaders for Global and Eternal Relevance.</p><a href="#" class="btn-more">Learn More</a>','abaris'),
             ),
         ),
         'services' => array(
-    	   'service1' => array(
+           'service1' => array(
                 'icon' => 'el el-compass-alt',
                 'description' => __('<h2>Lightning Fast</h2><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est culpa qui laborum.</p><a href="#" class="btn-more">Learn More</a>', 'abaris'),
             ),
