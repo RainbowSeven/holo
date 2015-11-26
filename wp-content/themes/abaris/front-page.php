@@ -209,46 +209,12 @@ break;
 					<?php if (isset($abaris_home['features'])): ?>
 						<div class="row">
 							<div class="feature-wrap">
-								<div class="span6" id="whyus">
-									<div class="feature2">
-										<?php echo $abaris_home['features']; ?>
-									</div>
-								</div>
-					<?php endif;?>
-								<div class="span6" id="skills">
-								<?php
-$output = '';
-    if (isset($abaris_home['skill-heading'])) {
-        $output .= '<h2><i class="el el-tags"></i>' . esc_html($abaris_home['skill-heading']) . '</h2>';
-    }
 
-    for ($i = 1; $i < 6; $i++) {
-        $skill = "skill-{$i}";
-        $percentage = "percentage-{$i}";
-        $icon = "skill-icon-{$i}";
-        if (isset($skill) && isset($abaris_home[$icon]) && isset($abaris_home[$percentage]) && isset($abaris_home[$skill])) {
-            $output .= '<div class="skill-container"><i class="' . esc_attr($abaris_home[$icon]) . '"></i>';
-            $output .= '<div class="skill">';
-            $output .= '<div class="skill-percentage percent' . esc_attr($abaris_home[$percentage]) . ' start"><span class="circle"></span></div>';
-            $output .= '<div class="skill-content">' . $abaris_home[$skill] . ' ' . $abaris_home[$percentage] . '%</div>';
-            $output .= '</div>';
-            $output .= '</div>';
-        }
-    }
-
-    echo $output;
-    ?>
-								</div> <!-- .span6 skills -->
+					<?php endif; ?>
+								
 								<br class="clear"/>
 							</div> <!-- .features-wrap -->
 						</div> <!-- .row -->
-
-
-					<?php
-while (have_posts()): the_post();
-        the_content();
-    endwhile;
-    ?>
 					</main><!-- #main -->
 				</div><!-- #primary -->
 	<?php
