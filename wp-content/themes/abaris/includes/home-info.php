@@ -4,11 +4,11 @@
         'slides' => array(
             'slide1' => array(
                 'image' => ABARIS_PARENT_URL . '/images/purity.jpg',
-                'description' => __('<h2>House of Living Oracles launches</h2><h3>On November 28th, 2015</h3><p><strong>VENUE:</strong> Rising Sun School Hall, Egbe, Lagos.</p><a class="btn-more" href='. esc_url( get_permalink( get_page_by_title( 'Contact Us' ) ) ). '>Contact Us</a>','abaris'),
+                'description' => __('<h2>House of Living Oracles launches</h2><h3>On November 28th, 2015</h3><p><strong>VENUE:</strong> Rising Sun School Hall, Egbe, Lagos.</p><a class="btn-more" href=' . esc_url( get_permalink( get_page_by_title( 'Contact Us' ) ) ). '>Contact Us</a>','abaris'),
             ),
             'slide2' => array(
                 'image' => ABARIS_PARENT_URL . '/images/eternalrelevance.jpg',
-                'description' => __('<h2>House of Living Oracles</h2><p>To raise a New Generation of Young Leaders for Global and Eternal Relevance.</p><a href="#" class="btn-more">Learn More</a>','abaris'),
+                'description' => __('<h2>House of Living Oracles</h2><p>To raise a New Generation of Young Leaders for Global and Eternal Relevance.</p><a class="btn-more" href=' . esc_url( get_permalink( get_page_by_title( 'Our Vision' ) ) ). '>Learn More</a>','abaris'),
             ),
         ),
         'services' => array(
