@@ -3,26 +3,38 @@
     $abaris_home = array(
         'slides' => array(
             'slide1' => array(
-                'image' => ABARIS_PARENT_URL .'/images/slide1.png',
-                'description' => __('<h2>House of Living Oracles launches</h2><h3>On November 28th, 2015</h3><p><strong>VENUE:</strong> Rising Sun School Hall, Egbe, Lagos.</p><a href="http://demo.webulous.in/abaris/contact/" class="btn-more">Contact Us</a>','abaris'),
+                'image' => ABARIS_PARENT_URL . '/images/purity.jpg',
+                'description' => __('<h2>House of Living Oracles launches</h2><h3>On November 28th, 2015</h3><p><strong>VENUE:</strong> Rising Sun School Hall, Egbe, Lagos.</p><a class="btn-more" href=' . esc_url( get_permalink( get_page_by_title( 'Contact Us' ) ) ). '>Contact Us</a>','abaris'),
             ),
             'slide2' => array(
-                'image' => ABARIS_PARENT_URL .'/images/slide1.png',
-                'description' => __('<h2>House of Living Oracles</h2><p>To raise a New Generation of Young Leaders for Global and Eternal Relevance.</p><a href="#" class="btn-more">Learn More</a>','abaris'),
+                'image' => ABARIS_PARENT_URL . '/images/eternalrelevance.jpg',
+                'description' => __('<h2>House of Living Oracles</h2><p>To raise a New Generation of Young Leaders for Global and Eternal Relevance.</p><a class="btn-more" href=' . esc_url( get_permalink( get_page_by_title( 'Our Vision' ) ) ). '>Learn More</a>','abaris'),
             ),
         ),
         'services' => array(
            'service1' => array(
                 'icon' => 'el el-compass-alt',
-                'description' => __('<h2>Lightning Fast</h2><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est culpa qui laborum.</p><a href="#" class="btn-more">Learn More</a>', 'abaris'),
+                'description' => __('<h2></h2><p>We believe every youth is born with a destiny and a great purpose to fulfil</p>', 'abaris'),
             ),
            'service2' => array(
-                'icon' => 'el el-cogs',
-                'description' => __('<h2>Built With Care</h2><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est culpa qui laborum.</p><a href="#" class="btn-more">Learn More</a>', 'abaris'),
+                'icon' => 'el el-compass-alt',
+                'description' => __('<h2></h2><p>We believe that the time to live purposefully is from the time of our youth</p>', 'abaris'),
             ),
            'service3' => array(
-                'icon' => 'el el-fullscreen',
-                'description' => __('<h2>Mobile Ready</h2><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est culpa qui laborum.</p><a href="#" class="btn-more">Learn More</a>', 'abaris'),
+                'icon' => 'el el-compass-alt',
+                'description' => __('<h2></h2><p>We believe that receiving the right information early in life will build a solid foundation for anyone</p>', 'abaris'),
+            ),
+           'service4' => array(
+                'icon' => 'el el-compass-alt',
+                'description' => __('<h2></h2><p>We believe every youth is endowed with immense potential and talents which if properly used will lead to a life of greatness</p>', 'abaris'),
+            ),
+           'service5' => array(
+                'icon' => 'el el-compass-alt',
+                'description' => __('<h2></h2><p>We believe in the transforming power that lies in one\'s connectivity with God. We do not leave Him out of the picture. After all, he was the one who painted it</p>', 'abaris'),
+            ),
+           'service6' => array(
+                'icon' => 'el el-compass-alt',
+                'description' => __('<h2></h2><p>Above all, we believe that the youth is the future and so we invest required resources to equip them for the glorious destiny that lives within them</p>', 'abaris'),
             ),
         ),
         'features' => __('<h2><i class="el el-tags"></i>Why Us?</h2><ul><li>Duis congue felis at risus elementum, ac varius orci.</li><li>Vestibulum elementum nulla in metus consectetur.</li><li>Etiam molestie nunc sit amet rhoncus placerat.</li><li>Quisque at eros ut justo fermentum commodo.</li><li>Pellentesque vitae nisi ac turpis varius ultricies.</li></ul>', 'abaris'),
