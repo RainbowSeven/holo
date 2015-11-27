@@ -187,10 +187,11 @@ break;
         $output = '<div class="services">';
         $output .= '<div class="container">';
         $output .= '<div class="row">';
+        $output .= '<h2> We believe that</h2>';
         foreach ($abaris_home['services'] as $service) {
             if (isset($service['icon']) && isset($service['description'])) {
                 $output .= '<div class="col-sm-4" id="service1">';
-                $output .= '<h3><i class="' . esc_attr($service['icon']) . '"></i></h3>';
+                #$output .= '<h3><i class="' . esc_attr($service['icon']) . '"></i></h3>';
                 $output .= '<div class="service">' . $service['description'] . '</div>';
                 $output .= '</div><!-- .col-sm-4 -->';
             }

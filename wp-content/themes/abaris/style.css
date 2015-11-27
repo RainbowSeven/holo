@@ -3086,3 +3086,19 @@ code, kbd, samp {
 .approach li a:hover {
 	text-decoration: none;
 }
+body.home footer {
+	margin-top: 0;
+}
+body.home #content {
+	display: none;
+}
+.services p {
+	padding: 0 20px;
+    text-align: center;
+    color: #fefefe;
+    font-weight: 100;
+    line-height: 1.5em;
+    font-size:  1.3em;
+    word-spacing: 0.1em;
+    letter-spacing: 0.1em;
+}
