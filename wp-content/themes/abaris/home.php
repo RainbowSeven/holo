@@ -11,63 +11,63 @@
  * @package ABARIS
  */
 global $abaris;
-get_header(); ?>
-<?php if( is_front_page() ) : ?>
+get_header();?>
+<?php if (is_front_page()): ?>
 	<div id="content" class="site-content container">
-<?php endif; ?>
+<?php endif;?>
 	<div class="row">
 
-	<?php if( isset( $abaris['layout'] ) && $abaris['layout'] == 2 ) : ?>
-		<?php get_sidebar(); ?>
-	<?php endif; ?>
+	<?php if (isset($abaris['layout']) && $abaris['layout'] == 2): ?>
+		<?php get_sidebar();?>
+	<?php endif;?>
 
-	<div id="primary" class="content-area two-thirds column span9">
+	<div id="primary" class="content-area col-sm-9">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( $abaris['breadcrumb'] && function_exists( 'abaris_breadcrumbs' ) ) : ?>			
+		<?php if ($abaris['breadcrumb'] && function_exists('abaris_breadcrumbs')): ?>
 			<div id="breadcrumb" role="navigation">
-				<?php abaris_breadcrumbs(); ?>
+				<?php abaris_breadcrumbs();?>
 			</div>
-		<?php endif; ?>
-				
-		<?php if ( have_posts() ) : ?>
+		<?php endif;?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php if (have_posts()): ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+			<?php /* Start the Loop */?>
+			<?php while (have_posts()): the_post();?>
 
-			<?php endwhile; ?>
+					<?php
+    /* Include the Post-Format-specific template for the content.
+     * If you want to override this in a child theme, then include a file
+     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+     */
+    get_template_part('content', get_post_format());
+    ?>
 
-			<?php 
-				if( $abaris['pagenavi'] && function_exists( 'abaris_pagination' ) ) : 
-					abaris_pagination();
-				else :
-					abaris_posts_nav();
-				endif; 
-			?>
+				<?php endwhile;?>
 
-		<?php else : ?>
+			<?php
+if ($abaris['pagenavi'] && function_exists('abaris_pagination')):
+    abaris_pagination();
+else:
+    abaris_posts_nav();
+endif;
+?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
+		<?php else: ?>
 
-		<?php endif; ?>
+			<?php get_template_part('content', 'none');?>
+
+		<?php endif;?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php if( isset( $abaris['layout'] ) && $abaris['layout'] == 3 ) : ?>
-		<?php get_sidebar(); ?>
-	<?php endif; ?>
+	<?php if (isset($abaris['layout']) && $abaris['layout'] == 3): ?>
+		<?php get_sidebar();?>
+	<?php endif;?>
 
-	<?php if( ! isset( $abaris['layout'] ) ) : ?>
-		<?php get_sidebar(); ?>
-	<?php endif; ?>
+	<?php if (!isset($abaris['layout'])): ?>
+		<?php get_sidebar();?>
+	<?php endif;?>
 
-<?php get_footer(); ?>
+<?php get_footer();?>

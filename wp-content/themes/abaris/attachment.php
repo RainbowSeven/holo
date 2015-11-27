@@ -12,7 +12,7 @@ get_header();?>
         <?php get_sidebar();?>
     <?php endif;?>
 
-    <div id="primary" class="content-area two-thirds column span9">
+    <div id="primary" class="attachment content-area col-sm-12">
         <main id="main" class="site-main" role="main">
 
         <?php if ($abaris['breadcrumb'] && function_exists('abaris_breadcrumbs')): ?>
@@ -23,9 +23,9 @@ get_header();?>
 
         <?php while (have_posts()): the_post();?>
 
-				<?php get_template_part('content', 'single');?>
 
-	            <?php
+		    <div class="col-sm-3">
+				<?php
 
     $args = [
         'post_type' => 'attachment',
@@ -40,21 +40,17 @@ get_header();?>
     echo apply_filters('the_title', $attachment->post_title);
     echo '</p>';
     ?>
+		    </div>
+		    <div class="col-sm-9">
+
+			    <?php get_template_part('content', 'single');?>
 
 				<?php abaris_post_nav();?>
+		    </div>
 
-
-			<?php endwhile; // end of the loop. ?>
+				<?php endwhile; // end of the loop. ?>
 
         </main><!-- #main -->
     </div><!-- #primary -->
-
-    <?php if (isset($abaris['layout']) && $abaris['layout'] == 3): ?>
-        <?php get_sidebar();?>
-    <?php endif;?>
-
-    <?php if (!isset($abaris['layout'])): ?>
-        <?php get_sidebar();?>
-    <?php endif;?>
 
 <?php get_footer();?>

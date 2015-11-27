@@ -1,5 +1,14 @@
 jQuery(document).ready(function($){
 
+  $('li.menu-item').each(
+      function(index, value){
+        if ($(value).hasClass('menu-item-has-children')){
+          $(value).find('a').first().attr('href', '#');
+         }
+      }
+    );
+  
+
   $('.flexslider').flexslider({
     animation: "slide",
     controlNav: false

@@ -113,7 +113,7 @@ hr {
 
 /* Text elements */
 p {
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 1.5em;
 }
 
@@ -2296,6 +2296,10 @@ a.btn-more {
 	text-shadow: 2px 2px 1px hsla(216, 24%, 14%, 0.6);
 }
 
+.flex-caption a.btn-more {
+	display: table-cell;
+}
+
 a.btn-more:hover,
 .btn-slider a:hover {
 	text-shadow: 0 0 0;
@@ -3005,4 +3009,80 @@ code, kbd, samp {
 	margin: 4px 0px;
 	background: rgba(207, 191, 191, 0.18) none repeat scroll 0% 0%;
 	padding: 8px;
+}
+.no-bullets, .no-bullets ul {
+	list-style: none;
+	margin-left: 4px;
+}
+.flexslider .slides img {
+	width: 400px;
+	height: 320px;
+}
+.fa {
+	margin-right: 4px;
+}
+.logo.site-branding {
+	margin-top: 25px;
+}
+#content{
+	display: block;
+	min-height: 520px;
+}
+.contact-info li:nth-child(1) span.text-uppercase {
+	background: rgba(244, 67, 54, 0.92);
+	padding: 4px 25px 0px 4px;
+	margin: 8px 0px;
+	display: inline-block;
+	position: relative;
+}
+.contact-info li:nth-child(2) span.text-uppercase {
+	background: rgba(33, 150, 243, 0.67);
+	padding: 4px 25px 0px 4px;
+	margin: 8px 0px;
+	display: inline-block;
+	position: relative;
+
+}
+.contact-info li:nth-child(1) span.text-uppercase:after, .contact-info li:nth-child(2) span.text-uppercase:after{
+	content: "»";
+	padding: 2px 2px 2px 6px;
+	margin-left: 8px;
+	width: 20px;
+	display: inline;
+	margin-top: -4px;
+	position: absolute;
+	right: 0px;
+	background: rgba(0, 0, 0, 0.35);
+}
+.no-left {
+	margin-left: 15px;
+}
+.size-large {
+	width: 800px;
+	height: 600px;
+}
+.attachment p {
+	margin-bottom: 0;
+}
+.list-alphabet {
+	list-style: lower-alpha;
+}
+.approach {
+
+}
+.approach li {
+	display: inline;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+.approach li img {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 8px auto;
+}
+.approach li a:hover {
+	text-decoration: none;
 }
